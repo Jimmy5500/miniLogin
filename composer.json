@@ -1,0 +1,19 @@
+{
+    "name": "imceits/project7",
+    "autoload": {
+        "psr-4": {
+            "Imceits\\Project7\\": "src/",
+            "Libs\\": "_classes/Libs/",
+            "Helpers\\": "_classes/Helpers/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jimmy5500",
+            "email": "oakisnothuman@gmail.com"
+        }
+    ],
+    "require": {
+        "fakerphp/faker": "^1.24"
+    }
+}
