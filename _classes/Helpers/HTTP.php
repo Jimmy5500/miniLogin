@@ -1,14 +1,16 @@
 <?php
+
 namespace Helpers;
+
 class HTTP
 {
- static $base = "http://localhost/project7";
- static function redirect($path, $query = "")
- {
- $url = static::$base . $path;
- if($query) $url .= "?$query";
+    static $base = "http://localhost/assignment6";
+    static function redirect($path, $query = "")
+    {
+        $url = static::$base . $path;
+        if ($query) $url .= "?$query";
 
- header("location: $url");
- exit();
- }
+        header("location: $url");
+        exit();
+    }
 }
