@@ -21,3 +21,10 @@ body {
 .link-muted:hover {
     text-decoration: none;
 }
+
+
+.profileImg{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}

@@ -84,9 +84,9 @@ $auth = Auth::check();
 
                                                 <?php if ($user->id !== $auth->id): ?>
                                                     <?php if ($user->suspended): ?>
-                                                        <a href="_actions/unsuspend.php?id=<?= $user->id ?>" class="btn btn-sm btn-danger">Suspended</a>
+                                                        <a href="_actions/toggle-suspension.php?id=<?= $user->id ?>&status=0" class="btn btn-sm btn-danger">Suspended</a>
                                                     <?php else: ?>
-                                                        <a href="_actions/suspend.php?id=<?= $user->id ?>" class="btn btn-sm btn-outline-success">Active</a>
+                                                        <a href="_actions/toggle-suspension.php?id=<?= $user->id ?>&status=1" class="btn btn-sm btn-outline-success">Active</a>
                                                     <?php endif ?>
                                                     <a href="_actions/delete.php?id=<?= $user->id ?>" class="btn btn-sm btn-outline-danger" onClick="return confirm('Are you sure you want to delete this user?')">Delete</a>
                                                 <?php else: ?>

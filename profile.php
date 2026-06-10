@@ -27,7 +27,10 @@ $auth = Auth::check();
                         <div class="col-lg-4 border-end">
                             <div class="p-4 text-center">
                                 <?php if ($auth->photo): ?>
-                                    <img src="_actions/photos/<?= $auth->photo ?>" alt="Profile Photo" class="rounded-circle img-fluid mb-3" style="max-width: 180px;">
+                                    <img src="_actions/photos/<?= $auth->photo ?>" alt="Profile Photo" class="profileImg shadow-lg img-fluid mb-3" style="max-width: 180px;   height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border:5px solid gray">
                                 <?php else: ?>
                                     <div class="rounded-circle bg-primary bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width: 180px; height: 180px;">
                                         <span class="display-6 text-primary"><?= strtoupper(substr($auth->name, 0, 1)) ?></span>
