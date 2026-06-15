@@ -77,7 +77,7 @@ $auth = Auth::check();
                                                             <li><a class="dropdown-item" href="_actions/role.php?id=<?= $user->id ?>&role=1">User</a></li>
                                                             <li><a class="dropdown-item" href="_actions/role.php?id=<?= $user->id ?>&role=2">Manager</a></li>
                                                             <li><a class="dropdown-item" href="_actions/role.php?id=<?= $user->id ?>&role=3">Admin</a></li>
-                                                            <li><a class="dropdown-item" href="_actions/role.php?id=<?= $user->id ?>&role=4">Owner</a></li>
+
                                                         </ul>
                                                     </div>
                                                 <?php endif; ?>
