@@ -31,7 +31,7 @@
                                     <label for="registerName">Name</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="email" name="email" class="form-control" id="registerEmail" placeholder="Email" required>
+                                    <input type="email" name="email"    class="form-control" id="registerEmail" placeholder="Email" required>
                                     <label for="registerEmail">Email</label>
                                 </div>
                                 <div class="form-floating mb-3">
